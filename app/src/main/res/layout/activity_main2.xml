@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1EE">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:max="10"
+        android:progress="1"
+        android:layout_marginTop="30dp"
+        android:progressTint="#FAA700"
+        />
+
+    <TextView
+        android:id="@+id/t_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/t_q"
+        android:textAlignment="center"
+        android:layout_marginBottom="80dp"
+        android:textSize="80px"
+        android:textColor="#5A4F40"/>
+
+    <TextView
+        android:id="@+id/t_q"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="50px"
+        android:textColor="#7C6D56"/>
+
+
+
+
+    <Button
+        android:id="@+id/b_aa"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:onClick="onClick"
+        android:layout_above="@+id/b_ab"
+        android:background="#5A4F40"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/b_ab"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:onClick="onClick"
+        android:background="#5A4F40"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
